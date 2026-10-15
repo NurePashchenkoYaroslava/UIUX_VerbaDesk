@@ -28,13 +28,13 @@
 
 Джерело: §5 / US-01 / AC-01.1–AC-01.5 та два наведені сценарії.
 
-| AC | Status | Evidence in plan |
-|---|---|---|
-| **AC-01.1** User can enter Title, Description | **COVERED** | M-01 C-06/C-07; §5.2 |
-| **AC-01.2** Title required | **COVERED** | M-01 C-06; validation state; TEST-03 |
-| **AC-01.3** Description required | **COVERED** | M-01 C-07; TEST-04 |
+| AC                                                       | Status      | Evidence in plan                                    |
+| -------------------------------------------------------- | ----------- | --------------------------------------------------- |
+| **AC-01.1** User can enter Title, Description            | **COVERED** | M-01 C-06/C-07; §5.2                                |
+| **AC-01.2** Title required                               | **COVERED** | M-01 C-06; validation state; TEST-03                |
+| **AC-01.3** Description required                         | **COVERED** | M-01 C-07; TEST-04                                  |
 | **AC-01.4** After creation: ID, Open, created_at, author | **COVERED** | §5.2 automatic values + S-03 visible data + TEST-02 |
-| **AC-01.5** Priority initially not set | **COVERED** | M-01 §5.2 + C-01/Not Set + D-03 |
+| **AC-01.5** Priority initially not set                   | **COVERED** | M-01 §5.2 + C-01/Not Set + D-03                     |
 
 **Review note:** AC-01.4 фактично заданий правильно. Однак TEST-02 сформульований занадто загально (`predetermined result can lead to S-03`) і не перераховує всі чотири автоматичні результати. Це недолік тестового запису, а не пропуск вимоги.
 
@@ -44,13 +44,13 @@
 
 Джерело: §5 / US-02 / AC-02.1–AC-02.5.
 
-| AC | Status | Evidence in plan |
-|---|---|---|
-| **AC-02.1** Authenticated team member can view list | **COVERED** | S-02-A/B entry conditions; TEST-06 |
-| **AC-02.2** List shows ID, Title, Status, Priority, Assignee if assigned | **COVERED** | S-02-A/B visible data |
-| **AC-02.3** Select issue and open details | **COVERED** | C-04; T-08; TEST-07 |
-| **AC-02.4** Details show ID, Title, Description, Status, Priority, Assignee, Author, Created at | **COVERED** | S-03 visible data; TEST-07 |
-| **AC-02.5** Empty list → empty list or message | **COVERED** | S-02-C + D-11; TEST-08 |
+| AC                                                                                              | Status      | Evidence in plan                   |
+| ----------------------------------------------------------------------------------------------- | ----------- | ---------------------------------- |
+| **AC-02.1** Authenticated team member can view list                                             | **COVERED** | S-02-A/B entry conditions; TEST-06 |
+| **AC-02.2** List shows ID, Title, Status, Priority, Assignee if assigned                        | **COVERED** | S-02-A/B visible data              |
+| **AC-02.3** Select issue and open details                                                       | **COVERED** | C-04; T-08; TEST-07                |
+| **AC-02.4** Details show ID, Title, Description, Status, Priority, Assignee, Author, Created at | **COVERED** | S-03 visible data; TEST-07         |
+| **AC-02.5** Empty list → empty list or message                                                  | **COVERED** | S-02-C + D-11; TEST-08             |
 
 ---
 
@@ -58,12 +58,12 @@
 
 Джерело містить **чотири ненумеровані** Acceptance Criteria; окремі AC-ID не створювалися.
 
-| Source point | Status | Evidence in plan |
-|---|---|---|
-| one assignee can be selected | **COVERED** | S-03 C-10/C-11; TEST-09 |
-| assignee must be team member | **COVERED** | C-10 condition; TEST-09 |
-| only Manager can assign | **COVERED** | Permission Matrix + D-05; TEST-27/T30 |
-| current assignee displayed | **COVERED** | S-03 visible data; TEST-09 |
+| Source point                 | Status      | Evidence in plan                      |
+| ---------------------------- | ----------- | ------------------------------------- |
+| one assignee can be selected | **COVERED** | S-03 C-10/C-11; TEST-09               |
+| assignee must be team member | **COVERED** | C-10 condition; TEST-09               |
+| only Manager can assign      | **COVERED** | Permission Matrix + D-05; TEST-27/T30 |
+| current assignee displayed   | **COVERED** | S-03 visible data; TEST-09            |
 
 **Traceability:** оригінальні ненумеровані source points збережені; вигаданих `AC-03.x` не створено.
 
@@ -73,10 +73,10 @@
 
 Джерело: §5 / US-04 / АС-04.1–АС-04.2.
 
-| AC | Status | Evidence in plan |
-|---|---|---|
-| **АС-04.1** Low / Normal / High / Critical | **COVERED** | C-12; D-03; TEST-10 |
-| **АС-04.2** only Manager can set/change | **COVERED** | Permission Matrix + C-12/C-13 disabled rule; TEST-27/T30 |
+| AC                                         | Status      | Evidence in plan                                         |
+| ------------------------------------------ | ----------- | -------------------------------------------------------- |
+| **АС-04.1** Low / Normal / High / Critical | **COVERED** | C-12; D-03; TEST-10                                      |
+| **АС-04.2** only Manager can set/change    | **COVERED** | Permission Matrix + C-12/C-13 disabled rule; TEST-27/T30 |
 
 ---
 
@@ -84,11 +84,11 @@
 
 Джерело: §5 / US-05 / АС-05.1, AC-05.2, AC-05.3.
 
-| AC | Status | Evidence in plan |
-|---|---|---|
-| **АС-05.1** current status displayed for each issue | **COVERED** | S-02-A/B visible data; TEST-11 |
-| **AC-05.2** status displayed on issue page | **COVERED** | S-03 visible data; TEST-11 |
-| **AC-05.3** status displayed in list | **COVERED** | S-02-A/B visible data; TEST-06/11 |
+| AC                                                  | Status      | Evidence in plan                  |
+| --------------------------------------------------- | ----------- | --------------------------------- |
+| **АС-05.1** current status displayed for each issue | **COVERED** | S-02-A/B visible data; TEST-11    |
+| **AC-05.2** status displayed on issue page          | **COVERED** | S-03 visible data; TEST-11        |
+| **AC-05.3** status displayed in list                | **COVERED** | S-02-A/B visible data; TEST-06/11 |
 
 ---
 
@@ -96,13 +96,13 @@
 
 Джерело: §5 / US-06 / AC-06.1–AC-06.5.
 
-| AC | Status | Evidence in plan |
-|---|---|---|
-| **AC-06.1** Comment text cannot be empty | **COVERED** | C-16 + TEST-20 |
-| **AC-06.2** Stored and shown | **COVERED** | C-17 + S-03 + TEST-19 |
-| **AC-06.3** Author stored/displayed | **COVERED** | S-03 comment data + TEST-19 |
-| **AC-06.4** Creation date/time stored/displayed | **COVERED** | S-03 + D-14 + TEST-19 |
-| **AC-06.5** Failed save → no comment + error | **COVERED** | C-17 error state + TEST-21 |
+| AC                                              | Status      | Evidence in plan            |
+| ----------------------------------------------- | ----------- | --------------------------- |
+| **AC-06.1** Comment text cannot be empty        | **COVERED** | C-16 + TEST-20              |
+| **AC-06.2** Stored and shown                    | **COVERED** | C-17 + S-03 + TEST-19       |
+| **AC-06.3** Author stored/displayed             | **COVERED** | S-03 comment data + TEST-19 |
+| **AC-06.4** Creation date/time stored/displayed | **COVERED** | S-03 + D-14 + TEST-19       |
+| **AC-06.5** Failed save → no comment + error    | **COVERED** | C-17 error state + TEST-21  |
 
 Особливо важлива негативна умова AC-06.5 не втрачена.
 
@@ -112,13 +112,13 @@
 
 Джерело: §5 / US-07 / АС-07.1–АС-07.5.
 
-| AC | Status | Evidence in plan |
-|---|---|---|
-| **АС-07.1** New issue starts Open | **COVERED** | M-01 automatic values; S-03; TEST-02 |
-| **АС-07.2** Allowed statuses only Open/In Progress/Resolved/Closed | **COVERED** | C-14 + full status matrix |
-| **АС-07.3** Changed value is stored and shown on next view | **AMBIGUOUS** | T-11…T-16 + TEST-12…16 show change, але окремого test sequence “change → leave/reopen → verify persisted value” немає |
-| **АС-07.4** Non-assignee cannot change status | **COVERED** | Permission Matrix; C-14; TEST-17/T28 |
-| **АС-07.5** System does not allow status value outside defined list | **AMBIGUOUS** | C-14 обмежує selector дозволеним переліком, але немає окремого implementation test на invalid/out-of-enum value |
+| AC                                                                  | Status        | Evidence in plan                                                                                                      |
+| ------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **АС-07.1** New issue starts Open                                   | **COVERED**   | M-01 automatic values; S-03; TEST-02                                                                                  |
+| **АС-07.2** Allowed statuses only Open/In Progress/Resolved/Closed  | **COVERED**   | C-14 + full status matrix                                                                                             |
+| **АС-07.3** Changed value is stored and shown on next view          | **AMBIGUOUS** | T-11…T-16 + TEST-12…16 show change, але окремого test sequence “change → leave/reopen → verify persisted value” немає |
+| **АС-07.4** Non-assignee cannot change status                       | **COVERED**   | Permission Matrix; C-14; TEST-17/T28                                                                                  |
+| **АС-07.5** System does not allow status value outside defined list | **AMBIGUOUS** | C-14 обмежує selector дозволеним переліком, але немає окремого implementation test на invalid/out-of-enum value       |
 
 **Ключовий дефект:** AC-07.5 не тотожний забороні неправильного transition. `Resolved → Open` і “status = UnknownValue” — різні перевірки.
 
@@ -128,11 +128,11 @@
 
 Джерело: §5 / US-08 / AC-08.1–AC-08.4.
 
-| AC | Status | Evidence in plan |
-|---|---|---|
-| **AC-08.1** High + non-Closed appears | **COVERED** | exact predicate + TEST-22/23 |
-| **AC-08.2** Critical + non-Closed appears | **COVERED** | exact predicate + TEST-22 |
-| **AC-08.3** Low/Normal excluded | **COVERED** | exact predicate + TEST-22 |
+| AC                                                 | Status      | Evidence in plan             |
+| -------------------------------------------------- | ----------- | ---------------------------- |
+| **AC-08.1** High + non-Closed appears              | **COVERED** | exact predicate + TEST-22/23 |
+| **AC-08.2** Critical + non-Closed appears          | **COVERED** | exact predicate + TEST-22    |
+| **AC-08.3** Low/Normal excluded                    | **COVERED** | exact predicate + TEST-22    |
 | **AC-08.4** Closed excluded regardless of priority | **COVERED** | exact predicate + TEST-22/24 |
 
 `High + Resolved` correctly included.  
@@ -262,16 +262,13 @@ Do not change BR-08.1. Mark the Closed-state presentation of C-14 as **UNRESOLVE
 
 The matrix correctly distinguishes relationship-to-issue from global role:
 
-| Actor/context | View | Create | Comment | Assign | Priority | Status |
-|---|---:|---:|---:|---:|---:|---:|
-| Team Member — non-assignee | Allow | Allow | Allow | Deny | Deny | Deny |
-| Team Member — assignee | Allow | Allow | Allow | Deny | Deny | **Allow** |
-| Team Lead — non-assignee | Allow | Allow | Allow | **Allow** | **Allow** | **Deny** |
-| Team Lead — assignee | Allow | Allow | Allow | **Allow** | **Allow** | **Allow** |
+| Actor/context              |  View | Create | Comment |    Assign |  Priority |    Status |
+| -------------------------- | ----: | -----: | ------: | --------: | --------: | --------: |
+| Team Member — non-assignee | Allow |  Allow |   Allow |      Deny |      Deny |      Deny |
+| Team Member — assignee     | Allow |  Allow |   Allow |      Deny |      Deny | **Allow** |
+| Team Lead                  | Allow |  Allow |   Allow | **Allow** | **Allow** |  **Deny** |
 
 Це відповідає BR-02, BR-06, BR-08 та US-03/04/06/07.
-
-**Особливо:** Team Lead non-assignee не отримує status rights автоматично. Це правильно.
 
 ---
 
@@ -328,11 +325,13 @@ Reset не додається.
 
 План правильно розділяє:
 
-**User-entered:**  
+**User-entered:**
+
 - Title
 - Description
 
-**Automatically assigned:**  
+**Automatically assigned:**
+
 - ID
 - Open
 - Created at
@@ -363,6 +362,7 @@ Reset не додається.
 NFR-03 HTTPS та NFR-04 backup правильно залишені поза screen inventory.
 
 Фінальний §8 містить:
+
 - NFR-01 response time < 1 s;
 - NFR-02 authentication required;
 - NFR-03 HTTPS only;
@@ -388,6 +388,7 @@ SR-10/SR-11 не повернуті в UI plan.
 ## Blocking for a fully deterministic prototype/contract
 
 ### Q-REV-01
+
 **Related defect:** DEF-01  
 Успішний M-01 → S-03 є схваленим navigation behavior чи лише попереднім UX-рішенням?
 
@@ -395,6 +396,7 @@ SR-10/SR-11 не повернуті в UI plan.
 **Impact:** блокує детермінований prototype flow після Create, але **не блокує генерацію самих frames**.
 
 ### Q-REV-02
+
 **Related defect:** DEF-07  
 Як має поводитися status control у S-03, коли current status = Closed і дозволених outgoing transitions немає?
 
@@ -402,6 +404,7 @@ SR-10/SR-11 не повернуті в UI plan.
 **Impact:** блокує повністю детермінований status interaction prototype для Closed; не блокує screen frame.
 
 ### Q-REV-03
+
 **Related defect:** DEF-06  
 Як візуально представляються forbidden status destinations?
 
@@ -413,18 +416,23 @@ SR-10/SR-11 не повернуті в UI plan.
 ## Can be postponed
 
 ### Q-REV-04
+
 Точний empty-state copy для S-02-C.
 
 ### Q-REV-05
+
 Точний error copy для порожнього Description.
 
 ### Q-REV-06
+
 Точний error copy для failed comment save.
 
 ### Q-REV-07
+
 Concrete widget type for Title/Description/Comment/Selectors.
 
 ### Q-REV-08
+
 Exact visual label for Back / modal close.
 
 Ці питання **не змінюють source requirements і не потребують нових product features**.
@@ -455,6 +463,7 @@ Exact visual label for Back / modal close.
 # 6. Minimal corrections — without rewriting unaffected sections
 
 ### Change 1 — T-05 / M-01 exit
+
 Було концептуально:  
 `successful Create → S-03` як source-backed behavior.
 
@@ -462,6 +471,7 @@ Exact visual label for Back / modal close.
 помітити navigation як **PROPOSED D-ID / UNRESOLVED**, не як SOURCE.
 
 ### Change 2 — M-01 dismissal
+
 Було:  
 close → previous S-02 state як established rule.
 
@@ -469,11 +479,13 @@ close → previous S-02 state як established rule.
 залишити як **PROPOSED D-ID**, якщо команда хоче це зафіксувати; D-07 його не покриває.
 
 ### Change 3 — TEST-12…16
+
 Додати окремий implementation test для **AC-07.3**:
 
 `change status → leave S-03 → reopen same issue → verify persisted new status`.
 
 ### Change 4 — AC-07.5
+
 Додати implementation test:
 
 `attempt invalid status value outside {Open, In Progress, Resolved, Closed} → reject → no invalid state stored`.
@@ -481,15 +493,19 @@ close → previous S-02 state як established rule.
 Це не потребує нового UI control.
 
 ### Change 5 — TEST-04 / T-07
+
 Залишити `Description required` як SOURCE.  
 Будь-які твердження про конкретний error copy або обов’язкове залишення саме M-01 позначити як **PROPOSED D-ID**, а не SOURCE.
 
 ### Change 6 — S-03 C-14 / Closed
+
 Не змінювати BR-08.1.  
 Окремо позначити presentation/interaction of status control in Closed state як **UNRESOLVED / PROPOSED D-ID**.
 
 ### Change 7 — Traceability
+
 У traceability:
+
 - не використовувати US-01/AC як джерело для непогодженого navigation;
 - додати AC-07.3 до нового persistence/reopen test;
 - додати AC-07.5 до нового invalid-value implementation test.
@@ -502,7 +518,7 @@ close → previous S-02 state як established rule.
 
 **US-03:** усі чотири вихідні ненумеровані пункти покриті без вигаданих AC-ID.
 
-**Permissions:** коректні, включно з Team Lead non-assignee ≠ status editor.
+**Permissions:** коректні, ≠ status editor.
 
 **Status model:** дозволені лише BR-08.1; Closed не має outgoing transitions; Resolved не прирівнюється до Closed.
 

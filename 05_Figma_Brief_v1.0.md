@@ -178,12 +178,9 @@ Assignee is a **relationship to the current issue**, not a global role.
 | -------------------------- | ------- | ------- | ------- | ----------- | --------------- | ------------- |
 | Team Member — non-assignee | Allowed | Allowed | Allowed | Disabled    | Disabled        | Disabled      |
 | Team Member — assignee     | Allowed | Allowed | Allowed | Disabled    | Disabled        | **Enabled**   |
-| Team Lead — non-assignee   | Allowed | Allowed | Allowed | **Enabled** | **Enabled**     | Disabled      |
-| Team Lead — assignee       | Allowed | Allowed | Allowed | **Enabled** | **Enabled**     | **Enabled**   |
+| Team Lead                  | Allowed | Allowed | Allowed | **Enabled** | **Enabled**     | Disabled      |
 
 Role-dependent forbidden controls remain **visible but disabled**; they are not hidden.
-
-**Team Lead does not gain status permission automatically.** Status permission is based on current assignee relation.
 
 **Source/D-ID:** [BR-02], [BR-06], [BR-08], [US-03], [US-04/AC-04.2], [US-07/AC-07.4], [D-05]
 
@@ -348,8 +345,7 @@ Show all four contexts in a compact permission/state reference:
 
 1. Team Member — non-assignee
 2. Team Member — assignee
-3. Team Lead — non-assignee
-4. Team Lead — assignee
+3. Team Lead
 
 For each context, show the relevant assignment, priority, and status controls in their approved enabled/disabled states.
 
@@ -469,8 +465,7 @@ HTTPS, backup, response time, and actual authentication are **implementation con
 - [ ] Not Set is distinct from Low/Normal/High/Critical.
 - [ ] Apply is present for assignee, priority, and status changes.
 - [ ] Forbidden role-dependent controls are visible disabled.
-- [ ] Team Lead non-assignee cannot change status.
-- [ ] Team Lead assignee can change status.
+- [ ] Team Lead cannot change status.
 
 ### Status
 
